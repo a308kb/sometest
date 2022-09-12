@@ -24,3 +24,10 @@ def test_set_in():
 
 def test_set_eq():
     assert {2, 7, 5} == {7, 5, 2}
+
+
+def test_negative():
+    try:
+        assert "ab"[3] == ""
+    except IndexError:
+        pass
